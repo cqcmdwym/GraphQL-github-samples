@@ -1,0 +1,16 @@
+query FirstFiveOrgMembers($login: String!, $n: Int!) {
+  organization(login: $login) {
+    id
+    name
+    members(first: $n) {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
+  }
+}
+
+# {"login": "google","n": 5}
