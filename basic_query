@@ -1,0 +1,10 @@
+{
+  # First Query!
+  viewer{
+    name
+    bio
+    id
+    company
+    avatarUrl
+  }
+}
