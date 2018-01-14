@@ -1,0 +1,32 @@
+mutation NewComment($input: AddCommentInput!){
+  addComment(input: $input){
+    clientMutationId
+    subject{
+      id
+    }
+  }
+}
+#{
+ # repositoryOwner(login: "cqcmdwym"){
+  #  repository(name:"GraphQL-github-samples"){
+   #   issues(first:1) {
+    #    edges {
+     #     node {
+      #      id
+       #     title
+        #    body
+         # }
+       # }
+     # }
+  #  }
+ # }
+#}
+
+
+{
+  "input": {
+    "clientMutationId":  "515152",
+    "subjectId": "MDU6SXNzdWUyODgzODUyMzU=",
+    "body": "Great idea - thank you!"
+  }
+}
