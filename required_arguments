@@ -1,0 +1,8 @@
+{
+  #if owner argument not provided,"Field 'repository' is missing required arguments: owner" error introduced
+  repository(name: "graphql", owner:"facebook") {
+    id
+    description
+    homepageUrl
+  }
+}
